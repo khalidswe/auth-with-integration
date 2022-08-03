@@ -1,0 +1,23 @@
+
+<center>
+    <h3 style="color: black;"> youre already in homepage asshole</h3>
+    
+    {% if key1 %}
+
+    {% for i in key1 %}
+
+    <br>
+    <img src="{{MEDIA_URL}}{{i.Image.url}}" width="150" height="200" alt="">
+    <br>
+    Image Name : {{i.Imagename}}
+
+    {% endfor %}
+
+    {% endif %}
+    <br>
+    
+    First name : {{request.session.Firstname}} <br>
+    Last name : {{request.session.Lastname}} <br>
+    Email ID : {{request.session.Email}} <br>
+
+</center>

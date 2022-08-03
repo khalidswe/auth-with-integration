@@ -1,0 +1,15 @@
+<center>
+<h3 style="color: black;"> youre already in homepage asshole</h3>
+    
+{% if key1 %}
+
+<br>
+<img src="{{MEDIA_URL}}{{Images.url}}" width="150" height="200" alt="">
+<br>
+
+{% endif %}
+<br>
+First name : {{request.session.Firstname}} <br>
+Last name : {{request.session.Lastname}} <br>
+Email ID : {{request.session.Email}}
+</center>
